@@ -1,0 +1,79 @@
+/* --- Normalize --- */
+.progress,sub,sup{vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hr,main,menu,nav,section,summary{display:block}hr,sub,sup{position:relative}body,figure{margin:0}button,hr,input,select{overflow:visible}[type=checkbox],[type=radio],legend{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-box-sizing:border-box;box-sizing:border-box; font-size: 100%;}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:0 0 .67em}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:60%;line-height:0}sub{bottom:-.25em}sup{top:-.45em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0;border:0}button,input,select,textarea{font:inherit;line-height:initial;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{cursor:pointer}[disabled]{cursor:default}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button;border:0}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}button:-moz-focusring,input:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}address {font-style: normal}img {max-width:100%; display: block; margin: 0 auto}*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale;}
+*::before, *::after, a {-webkit-transition:all .4s;  transition: all .4s;} i::before {-webkit-transition:none;transition: none}
+.clearfix:before, .clearfix:after{display:table;content:" "; clear: both}
+a[name]{display: block; cursor: auto!important} p.has_target {margin: 0}
+
+/* -------- Animations ------- */
+@-webkit-keyframes modal-figure {0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}20%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}30%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}50%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}60%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}80%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}}@keyframes modal-figure{0%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}20%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}30%{-webkit-transform:rotate(2deg);transform:rotate(2deg)}50%{-webkit-transform:rotate(-2deg);transform:rotate(-2deg)}60%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}80%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}100%{-webkit-transform:translateY(1000px);transform:translateY(1000px);opacity:0}}
+
+/* --- Unfold Modal --- */
+@-webkit-keyframes unfoldIn{0%{-webkit-transform:scaleY(.005) scaleX(0);transform:scaleY(.005) scaleX(0)}50%{-webkit-transform:scaleY(.005) scaleX(1);transform:scaleY(.005) scaleX(1)}100%{-webkit-transform:scaleY(1) scaleX(1);transform:scaleY(1) scaleX(1)}}@keyframes unfoldIn{0%{-webkit-transform:scaleY(.005) scaleX(0);transform:scaleY(.005) scaleX(0)}50%{-webkit-transform:scaleY(.005) scaleX(1);transform:scaleY(.005) scaleX(1)}100%{-webkit-transform:scaleY(1) scaleX(1);transform:scaleY(1) scaleX(1)}}
+@-webkit-keyframes unfoldOut{0%{-webkit-transform:scaleY(1) scaleX(1);transform:scaleY(1) scaleX(1)}50%{-webkit-transform:scaleY(.005) scaleX(1);transform:scaleY(.005) scaleX(1)}100%{-webkit-transform:scaleY(.005) scaleX(0);transform:scaleY(.005) scaleX(0)}}@keyframes unfoldOut{0%{-webkit-transform:scaleY(1) scaleX(1);transform:scaleY(1) scaleX(1)}50%{-webkit-transform:scaleY(.005) scaleX(1);transform:scaleY(.005) scaleX(1)}100%{-webkit-transform:scaleY(.005) scaleX(0);transform:scaleY(.005) scaleX(0)}}
+@-webkit-keyframes zoomIn{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes zoomIn{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+@-webkit-keyframes zoomOut{0%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(0);transform:scale(0)}}@keyframes zoomOut{0%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(0);transform:scale(0)}}
+ 
+
+/* --- Video foundation --- */
+
+[data-vimeo], [data-embed] { position: relative; }
+[data-vimeo] .play, [data-vimeo] .close { background-color: #00a5be; color: #fff; padding: 11px; text-transform: uppercase; } 
+[data-vimeo] .play:hover, [data-vimeo] .close:hover { background-color: #464646; color: #fff; }
+[data-embed] .play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+[data-embed] .close { position: absolute; top: 0; right: 0; }
+[data-embed] .close i:before { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+
+.youtube { position: relative; cursor: pointer; width: 100%; font-size: 0; }
+.youtube[class*="elem-"] { width: 440px;}
+.youtube:before, .youtube:after { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.youtube:before { content: ""; background-color: #fff; width: 40px; height: 40px; }
+.youtube:after { font-size: 70px; color: #4d4d4d; font-family: "fontello"; font-weight: 400; margin: 0; font-style: normal; content: "\e80e"; }
+.youtube:hover:after { color: #ff0000; }
+.youtube.active:before, .youtube.active:after { display: none; }
+
+
+/* ---  Basic Modal --- */
+#lean_overlay {padding: 10px; position: fixed; z-index:1100; top: 0; left: 0; height:100%; width:100%; background: rgba(0,0,0,.7); display: none; -webkit-box-pack:center; -ms-flex-pack:center; justify-content:center; -webkit-box-align:center; -webkit-align-items:center; -ms-flex-align:center; -ms-grid-row-align:center; align-items:center; }
+#lean_overlay input, #lean_overlay textarea { display: block; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box;border: none; padding: 12px 10px; font-size: 17px; margin-bottom: 10px; color: inherit;line-height: 1em; -webkit-transition:.3s ease all; transition: .3s ease all;    -webkit-box-shadow: 1.5px 2.6px 7px rgba(24, 23, 24, 0.25);    box-shadow: 1.5px 2.6px 7px rgba(24, 23, 24, 0.25); }
+#lean_overlay { -webkit-transform: scaleY(0.01) scaleX(0); transform: scaleY(0.01) scaleX(0); -webkit-animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+
+.modal-content { -webkit-transform: scale(0); transform: scale(0); -webkit-animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+.modal-content { display: none; -webkit-box-flex:100%; -ms-flex:100%; flex:100%; background: rgb(237, 237, 237); max-width: 500px; -webkit-box-sizing: border-box; box-sizing: border-box; padding:20px; position: relative; margin: 15px; }
+.modal-close { position: absolute; right:-15px; top:-15px; z-index:1002; cursor:pointer; width: 40px; height: 40px; border-radius: 50%; background-color: #12aaee; -webkit-box-shadow:0 0 4px 2px rgba(0,0,0,.3); box-shadow:0 0 4px 2px rgba(0,0,0,.3); border: 2px solid #fff; padding: 1px;}
+.modal-close i { position: relative; color:#fff; ;}
+.modal-close i:before {  -webkit-transform: rotate(45deg); transform: rotate(45deg);
+    font-size: 40px; margin: 0; content: '+'; line-height: 30px; }
+.modal-close:hover {background-color: #2c861c; }
+.modal-content .btn {  margin: 20px auto 0; display: table;}
+.modal-btn i {font-size: 1.2em; margin-right: 5px;}
+
+/* ---  Ask Question form --- */
+#ask-question strong { font-size:20px; text-align: center; text-transform: uppercase; line-height: 1; margin-bottom: 20px; display: block; }
+#ask-question  textarea { height: 120px; }
+.modal-content ::-webkit-input-placeholder {color: #363636}
+.modal-content :-moz-placeholder {color: #363636}
+.modal-content ::-moz-placeholder {color: #363636}
+.modal-content :-ms-input-placeholder {color: #363636}
+
+/* ---  Bio Vido Modal --- */
+.vid-mdl {position: relative; display: table; margin: 20px auto;}
+.vid-mdl .modal-btn {position: absolute; right: 5px; bottom: 5px; font-size: 40px; color: #2ba0bc;}
+#bio-modal {max-width: 800px; padding: 10px;}
+#bio-modal .modal-close:after{content:"Close Video"; color:#fff; position:absolute; width: 80px; top: -8px;
+    right: 40px; text-align:right;opacity:0; font-size: 14px;}
+#bio-modal .modal-close:hover:after{opacity:1}
+
+/* ---  Friendly Pop-up Figure --- */
+#modal-fig {position: fixed; bottom: -10px;  right: 0; margin: auto;  z-index: 1101; max-width: 350px; display: none;
+    -webkit-animation: modal-figure 5s linear .8s both; animation: modal-figure 5s linear .8s both; }
+.lean-open #modal-fig {display: block;}
+@media (max-width: 590px) { .lean-open #modal-fig {display: none;} }
+
+
+
+/* ---  Page Styles--- */
+main {max-width: 1000px; margin: 20px auto; text-align: center; }
+a {text-decoration: none;}
+[class^="btn"] { position: relative; z-index: 1; display: inline-block; vertical-align: middle; cursor: pointer; text-align: center; -webkit-transition: .3s all; transition: .3s all; font: 400 15px/1.2 'Lato', sans-serif; color: #fff; text-transform: uppercase; min-width: 235px; margin: 10px; padding: 12px 18px; background-color: #1d96b5; border-radius: 12px; }
+
+[class^="btn"]:hover { background-color: #0f94ca; color: #fff; }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="$var(metaDescription)$" name="Description" />
+       <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" type="text/css" rel="stylesheet"> -->
+    <title>$var(pageTitle)$</title>
+    <link rel="canonical" href="http://www.$var(siteURL)$/$var(pageURL)$.html" />
+    <!-- don't change above -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+    </header>
+
+    <main>
+
+        <a href="#ask-question" rel="leanModal" class="btn modal-btn"><i class="icon-help-circled"></i>Ask Our Front Desk A Question</a>
+
+            <div id="ask-question" class="modal-content">
+                <p><a name="ask-question"></a></p>
+                <!-- <div class="modal-close"><i class="icon-plus"></i></div> -->
+                <form action="" class="forms" method="post">
+                    <strong>Ask A Question.</strong>
+                    <input name="Name" placeholder="Name" required="true" type="text" />
+                    <input name="Phone" placeholder="Phone Number" type="text" />
+                    <input name="email" placeholder="Email Address" required="true" type="email" />
+                    <textarea name="question" class="fields" placeholder="Questions/Comments"></textarea>
+                    <button class="btn">Send</button>
+                    <input name="_subject" value="Ask Question Modal" type="hidden" />
+                    <input name="_redirect" value="thanks.html" type="hidden" />
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="_check" tabindex="-1" value="">
+                    </div>
+                </form>
+               
+            </div>
+            <div id="modal-fig"><img src="assets/images/modal-figure.png" alt=""></div>
+
+
+
+        <div class="elem-left vid-mdl">
+            <img alt="" class="img" src="assets/images/meet-dentist-1.jpg" />
+            <a href="#bio-modal" rel="leanModal" class="modal-btn wow animated infinite pulse"><i class="icon-play-circled2"></i></a>
+
+            <div id="bio-modal" class="modal-content">
+                <div class="figure">
+                        <div class="youtube" data-embed="Ivx8TAcGKP8" data-width="560" data-height="315"></div>
+                </div>
+            </div>
+        </div>
+
+
+</main>
+
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
